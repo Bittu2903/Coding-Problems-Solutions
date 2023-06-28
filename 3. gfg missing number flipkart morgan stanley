@@ -1,0 +1,7 @@
+class Solution:
+    def missingNumber(self,array,n):
+        # code here
+        summ = int(n*(n+1)/2)
+        for i in array:
+            summ -= i
+        return summ
